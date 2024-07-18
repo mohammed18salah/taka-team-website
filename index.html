@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TAKA TEAM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            overflow-x: hidden;
+            color: #fff;
+            text-align: center; /* جعل النص في الوسط */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            padding: 20px;
+        }
+
+        header .logo {
+            width:200px;
+        }
+
+        header h1 {
+            margin: 10px 0;
+        }
+
+        .contact-button {
+            background: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .contact-button:hover {
+            background: #e67e22;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #f39c12;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .designs-gallery {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+
+        .designs-gallery img {
+            width: 200px;
+            height: auto;
+            border: 2px solid #f39d1231;
+            border-radius: 25px;
+            scroll-snap-align: center;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .designs-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-icons {
+            font-size: 24px;
+        }
+
+        .contact-icons a {
+            margin: 0 10px;
+        }
+
+        .contact-button-center {
+            display: inline-block;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .spacer {
+            height: 80px; /* فراغ صغير في نهاية الصفحة */
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <video autoplay muted loop>
+            <source src="BACKGROND-VIDEO/anime.mp4" type="video/mp4">
+            <!-- إضافة مصدر بديل في حال عدم دعم الصيغة -->
+            <source src="BACKGROND-VIDEO/anime.webm" type="video/webm">
+        </video>
+    </div>
+    <header class="animate__animated animate__fadeInDown">
+        <img src="image/LOGO.PNG" alt="شعار الفريق" class="logo">
+        <h1>TAKA TEAM</h1>
+    </header>
+    <main class="animate__animated animate__fadeInUp">
+        <section id="about">
+            <h2>من نحن</h2>
+            <p>نحن فريق TAKA، فريق متميز بابتكاراته في مجالات التقنية والمنافسات.</p>
+            <div class="contact-button-center">
+                <a href="#contact" class="contact-button">تواصل معنا</a>
+            </div>
+        </section>
+        <section id="founder">
+            <h2>مؤسس الفريق</h2>
+            <p>جراي (مصطفى)</p>
+            <p class="contact-icons">
+                <a href="https://www.facebook.com/kawaii202" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="فيسبوك" style="width: 24px; height: 24px;">
+                </a>
+            </p>
+        </section>
+        <section id="goals">
+            <h2>أهداف الفريق</h2>
+            <p>من اهداف الفريق حاليا:-</p>
+            <ul>
+                <li>القيام بموسم تصنيفي جميل واستعراض مهارات التصاميم ومواهب الاعضاء امام الفرق الاخرى.</li>
+                <li>القيام بمنافسه شريفة على مستوى باور وتقديم كل مابوسعنا تقديمه.</li>
+                <li>تحقيق التصنيف وترسيم الفريق من جديد.</li>
+            </ul>
+        </section>
+        <section id="leaders">
+            <h2>القادة الحاليون للفريق</h2>
+            <p>القائد أشرف</p>
+            <p>النائب موشوكو</p>
+        </section>
+        <section id="designs">
+            <h2>تصاميم الفريق</h2>
+            <div class="designs-gallery">
+                <img src="image/IMG-20240718-WA0003.jpg" alt="تصميم 1" class="animate__animated animate__zoomIn">
+                <img src="image/IMG-20240718-WA0004.jpg" alt="تصميم 2" class="animate__animated animate__zoomIn">
+                <img src="image/IMG-20240718-WA0005.jpg" alt="تصميم 3" class="animate__animated animate__zoomIn">
+                <img src="image/IMG-20240718-WA0006.jpg" alt="تصميم 4" class="animate__animated animate__zoomIn">
+                <img src="image/IMG-20240718-WA0007.jpg" alt="تصميم 5" class="animate__animated animate__zoomIn">
+                <img src="image/IMG-20240718-WA0008.jpg" alt="تصميم 6" class="animate__animated animate__zoomIn">
+                <img src="image/IMG-20240718-WA0009.jpg" alt="تصميم 7" class="animate__animated animate__zoomIn">
+                <img src="image/IMG-20240718-WA0010.jpg" alt="تصميم 8" class="animate__animated animate__zoomIn">
+                <img src="image/IMG-20240718-WA0011.jpg" alt="تصميم 9" class="animate__animated animate__zoomIn">
+                <img src="image/IMG-20240718-WA0012.jpg" alt="تصميم 10" class="animate__animated animate__zoomIn">
+                <img src="image/IMG-20240718-WA0013.jpg" alt="تصميم 11" class="animate__animated animate__zoomIn">
+                <img src="image/IMG-20240718-WA0014.jpg" alt="تصميم 12" class="animate__animated animate__zoomIn">
+            </div>
+        </section>
+        <section id="achievements">
+            <h2>إنجازات الفريق</h2>
+            <ul>
+                <li>ابتكار نظام الهاش والتوقيع</li>
+                <li>المركز الثاني في بطولة سوبر باور لعامها الثالث</li>
+                <li>المركز الأول في بطولة سوبر باور لعامها الرابع</li>
+                <li>المركز الأول في تصنيف الاتحاد الشهري لشهر أغسطس سنة 2017</li>
+                <li>المركز الثاني في تصنيف الاتحاد الشهري لشهر فبراير سنة 2018</li>
+                <li>المركز الثالث في تصنيف الاتحاد الشهري لشهر يوليو سنة 2018</li>
+                <li>المركز الثاني في تصنيف الاتحاد الشهري لشهر أغسطس سنة 2018</li>
+                <li>المركز الأول في تصنيف الاتحاد الشهري لشهر أكتوبر سنة 2018</li>
+                <li>المركز الثالث في تصنيف الاتحاد الشهري لشهر أبريل سنة 2019</li>
+                <li>المركز الثالث في كأس باور لسنة 2023</li>
+            </ul>
+        </section>
+        <section id="contact" class="animate__animated animate__fadeInUp">
+            <h2>تواصل معنا</h2>
+            <p class="contact-icons">
+                <a href="https://www.facebook.com/kawaii202" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="فيسبوك" style="width: 24px; height: 24px;">
+                </a>
+            </p>
+        </section>
+        <div class="spacer"></div> <!-- إضافة الفراغ في نهاية الصفحة -->
+    </main>
+    <footer>
+        <p>&copy; 2024 TAKA TEAM. جميع الحقوق محفوظة.</p>
+        <p>برمجة وتصميم بواسطة <a href="https://www.instagram.com/m4._l?igsh=dWM5ZThtenpyMm50" target="_blank">Mohammed Salah</a></p>
+    </footer>
+</body>
+</html>
